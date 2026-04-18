@@ -1,4 +1,5 @@
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GithubIcon } from "./BrandIcons";
 import { Section } from "./Section";
 
 const projects = [
@@ -61,7 +62,7 @@ export function Projects() {
                     aria-label="GitHub"
                     className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-purple hover:text-foreground"
                   >
-                    <Github className="h-4 w-4" />
+                    <GithubIcon className="h-4 w-4" />
                   </a>
                   {p.demo && (
                     <a

@@ -1,4 +1,5 @@
-import { ArrowRight, Mail, Github, Linkedin, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import { Typing } from "./Typing";
 
 export function Hero() {
@@ -54,10 +55,10 @@ export function Hero() {
 
           <div className="mt-6 flex items-center gap-5 text-muted-foreground">
             <a href="https://github.com/samarxx10" target="_blank" rel="noreferrer" aria-label="GitHub" className="transition-colors hover:text-foreground">
-              <Github className="h-5 w-5" />
+              <GithubIcon className="h-5 w-5" />
             </a>
             <a href="https://www.linkedin.com/in/samarth-goyal-8023222b5" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-foreground">
-              <Linkedin className="h-5 w-5" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
             <a href="mailto:goyalsamarth4888@gmail.com" aria-label="Email" className="transition-colors hover:text-foreground">
               <Mail className="h-5 w-5" />

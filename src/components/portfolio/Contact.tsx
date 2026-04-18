@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import { Section } from "./Section";
 
 const links = [
@@ -9,13 +10,13 @@ const links = [
     href: "mailto:goyalsamarth4888@gmail.com",
   },
   {
-    icon: Linkedin,
+    icon: LinkedinIcon,
     label: "LinkedIn",
     value: "linkedin.com/in/samarth-goyal",
     href: "https://www.linkedin.com/in/samarth-goyal-8023222b5",
   },
   {
-    icon: Github,
+    icon: GithubIcon,
     label: "GitHub",
     value: "github.com/samarxx10",
     href: "https://github.com/samarxx10",
