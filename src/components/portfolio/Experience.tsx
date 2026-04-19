@@ -22,7 +22,11 @@ const items = [
   },
 ];
 
-const learning = ["React Advanced Patterns", "TypeScript", "Node.js & Backend", "System Design Basics"];
+const learning = [
+  "Backend Development (Node.js, Express, APIs)",
+  "Data Structures & Algorithms (DSA)",
+  "Improving problem-solving skills",
+];
 
 export function Experience() {
   return (

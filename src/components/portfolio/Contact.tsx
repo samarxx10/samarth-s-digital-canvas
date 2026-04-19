@@ -46,8 +46,9 @@ export function Contact() {
               <ArrowUpRight className="h-4 w-4" />
             </a>
             <a
-              href="/resume.pdf"
-              download
+              href="https://raw.githubusercontent.com/samarxx10/Resume/main/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="mt-3 ml-3 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:bg-card"
             >
               Download Resume

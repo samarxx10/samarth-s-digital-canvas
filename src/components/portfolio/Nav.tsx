@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
+const RESUME_URL = "https://raw.githubusercontent.com/samarxx10/Resume/main/resume.pdf";
+
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -51,8 +53,9 @@ export function Nav() {
           </ul>
 
           <a
-            href="/resume.pdf"
-            download
+            href={RESUME_URL}
+            target="_blank"
+            rel="noreferrer"
             className="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-purple to-blue px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg transition-transform hover:scale-105"
           >
             Resume
@@ -87,8 +90,9 @@ export function Nav() {
               ))}
               <li>
                 <a
-                  href="/resume.pdf"
-                  download
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center rounded-full bg-gradient-to-r from-purple to-blue px-4 py-2 text-sm font-medium text-primary-foreground"
                 >
                   Resume

@@ -10,6 +10,10 @@ const groups = [
     items: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
+    label: "Backend",
+    items: ["Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Auth"],
+  },
+  {
     label: "Tools",
     items: ["Git", "GitHub", "VS Code"],
   },
@@ -23,7 +27,7 @@ export function Skills() {
       title={<>My <span className="gradient-text">toolkit</span></>}
       subtitle="Technologies and tools I use to build, ship and solve."
     >
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {groups.map((g) => (
           <div key={g.label} className="gradient-border p-6">
             <div className="mb-5 flex items-center justify-between">

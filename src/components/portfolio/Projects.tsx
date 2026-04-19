@@ -4,32 +4,25 @@ import { Section } from "./Section";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    desc: "A modern, animated personal portfolio built with React, showcasing my work and skills with smooth interactions.",
-    stack: ["React", "TypeScript", "Tailwind"],
-    github: "https://github.com/samarxx10",
-    demo: "#",
+    title: "Employee Management System",
+    desc: "A modern React-based web application to manage employee data efficiently. Add, update, delete and view employee details with a clean, interactive interface designed to simplify record handling and boost productivity.",
+    stack: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/samarxx10/Employee-Management-System",
+    demo: "https://ems-react-app-six.vercel.app/",
   },
   {
-    title: "DSA Practice Tracker",
-    desc: "A tracker to log LeetCode progress, categorize problems by topic and visualize streaks over time.",
-    stack: ["JavaScript", "React", "LocalStorage"],
-    github: "https://github.com/samarxx10",
-    demo: null,
+    title: "Notes Application",
+    desc: "A responsive React-based notes management app that lets users create, edit and delete notes with ease. Features a friendly interface for organizing thoughts and tasks efficiently.",
+    stack: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/samarxx10/Notes-Application-Project",
+    demo: "https://notes-application-react-seven.vercel.app/",
   },
   {
-    title: "Algorithm Visualizer",
-    desc: "Interactive visualizer for sorting and pathfinding algorithms — built to make CS concepts click.",
-    stack: ["JavaScript", "HTML5 Canvas", "CSS"],
-    github: "https://github.com/samarxx10",
-    demo: null,
-  },
-  {
-    title: "Mini Web Apps Collection",
-    desc: "A growing set of mini projects — calculators, weather apps, todo lists — built while learning frontend.",
+    title: "Music Player",
+    desc: "A web-based music player built with HTML, CSS and JavaScript. Play, pause and navigate through songs with smooth, interactive playback controls.",
     stack: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/samarxx10",
-    demo: null,
+    github: "https://github.com/samarxx10/Music-Player",
+    demo: "https://samarxx10.github.io/Music-Player/",
   },
 ];
 
@@ -39,17 +32,17 @@ export function Projects() {
       id="projects"
       eyebrow="Projects"
       title={<>Things I've <span className="gradient-text">built</span></>}
-      subtitle="A selection of projects I've worked on while learning and experimenting."
+      subtitle="A selection of projects I've shipped while learning, experimenting and solving real problems."
     >
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2">
         {projects.map((p, i) => (
           <article
             key={p.title}
-            className="group gradient-border relative overflow-hidden p-7 transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px] hover:shadow-purple/40"
+            className="group gradient-border relative flex flex-col overflow-hidden p-7 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_25px_60px_-15px] hover:shadow-purple/50"
           >
-            <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br from-purple/10 to-blue/10 opacity-0 blur-2xl transition-opacity group-hover:opacity-100" />
+            <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br from-purple/20 to-blue/20 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
 
-            <div className="relative">
+            <div className="relative flex flex-1 flex-col">
               <div className="mb-4 flex items-start justify-between">
                 <span className="font-mono text-xs text-purple">
                   0{i + 1}
@@ -60,7 +53,7 @@ export function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="GitHub"
-                    className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-purple hover:text-foreground"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:border-purple hover:bg-purple/10 hover:text-foreground hover:shadow-[0_0_20px_-5px] hover:shadow-purple/60"
                   >
                     <GithubIcon className="h-4 w-4" />
                   </a>
@@ -70,7 +63,7 @@ export function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Live demo"
-                      className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-purple hover:text-foreground"
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:border-blue hover:bg-blue/10 hover:text-foreground hover:shadow-[0_0_20px_-5px] hover:shadow-blue/60"
                     >
                       <ExternalLink className="h-4 w-4" />
                     </a>
@@ -78,18 +71,18 @@ export function Projects() {
                 </div>
               </div>
 
-              <h3 className="font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-purple">
+              <h3 className="font-display text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple group-hover:to-blue sm:text-3xl">
                 {p.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">
                 {p.desc}
               </p>
 
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-auto pt-5 flex flex-wrap gap-2">
                 {p.stack.map((s) => (
                   <span
                     key={s}
-                    className="rounded-md bg-secondary/60 px-2.5 py-1 font-mono text-xs text-muted-foreground"
+                    className="rounded-md border border-border bg-secondary/60 px-2.5 py-1 font-mono text-xs text-foreground/90"
                   >
                     {s}
                   </span>
